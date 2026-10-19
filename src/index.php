@@ -4,7 +4,7 @@ Crie um objeto da classe Planta.
 Utilize os dados informados no enunciado. -->
 <?php 
 require_once "src/Planta.php";
-
+$planta = new Planta("Suculenta", "Echeveria elegans", 15)
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -29,6 +29,7 @@ require_once "src/Planta.php";
 
             <h2>
                 <!-- Exiba o nome popular da planta. -->
+                 <?= $planta->getNome() ?>
             </h2>
 
             <div class="informacao">
@@ -36,6 +37,7 @@ require_once "src/Planta.php";
 
                 <span class="valor">
                     <!-- Exiba a espécie. -->
+                     <?= $planta->getEspecie() ?>
                 </span>
             </div>
 
@@ -44,6 +46,7 @@ require_once "src/Planta.php";
 
                 <span class="valor">
                     <!-- Exiba a quantidade diária em ml. -->
+                     <?= $planta->getAguaPorDia() ?> ml
                 </span>
             </div>
 
@@ -52,6 +55,7 @@ require_once "src/Planta.php";
 
                 <p>
                     <!-- Exiba a quantidade calculada para sete dia -->
+                     <?= $planta->calcularAguaSemanal() ?> ml
                 </p>
             </div>
 
