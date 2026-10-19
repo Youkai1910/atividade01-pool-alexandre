@@ -2,6 +2,10 @@
 Importe a classe Planta.
 Crie um objeto da classe Planta.
 Utilize os dados informados no enunciado. -->
+<?php 
+require_once "src/Planta.php";
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
