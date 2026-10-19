@@ -14,6 +14,9 @@ $this->aguaPorDia = $aguaPorDia;
 
 $this->setAguaPordia($aguaPorDia);
 }
+public function calcularAguaSemanal(){
+    return $this->aguaPorDia * 7;
+}
 public function ehPlanta(): bool
 {
     return $this->aguaPorDia < 15;
