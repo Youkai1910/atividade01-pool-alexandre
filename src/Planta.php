@@ -12,7 +12,7 @@ $this->nome = $nome;
 $this->especie = $especie;
 $this->aguaPorDia = $aguaPorDia;
 
-$this->setAguaPordia($aguaPorDia);
+$this->setAguaPorDia($aguaPorDia);
 }
 public function calcularAguaSemanal(){
     return $this->aguaPorDia * 7;
@@ -37,7 +37,7 @@ public function setNome(string $nome): void {
 public function setEspecie(string $especie): void {
     $this->especie = $especie;
 }
-public function setAguaPordia(int $aguaPorDia): void {
+public function setAguaPorDia(int $aguaPorDia): void {
    if($aguaPorDia > 0){
 $this->aguaPorDia = $aguaPorDia;}
 }
